@@ -27,6 +27,10 @@ log-analyzer/
 │   └── report.json
 │
 ├── analyzer.py
+├── configş.json
+├── models.py
+├── parser.py
+├── util.py
 ├── test_analyzer.py
 ├── requirements.txt
 └── README.md
