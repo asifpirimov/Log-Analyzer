@@ -1,0 +1,9 @@
+{
+    "ERRORS": [
+        "2026-07-12 10:12:31 ERROR Database connection failed\n",
+        "2026-07-12 10:13:40 ERROR Timeout while calling API"
+    ],
+    "Number of ERRORS": 2,
+    "Number of WARNINGS": 1,
+    "Number of INFO": 1
+}
