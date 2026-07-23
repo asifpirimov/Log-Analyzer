@@ -1,6 +1,6 @@
 # Log Analyzer
 
-A Python-based log analysis tool that scans application log files, counts log levels (ERROR, WARNING, INFO), generates a structured JSON report, and validates functionality using automated unit tests with Pytest.
+A Python-based log analysis tool developed as part of my QA Automation learning journey. The project analyzes application log files, counts log levels (ERROR, WARNING, INFO), generates structured JSON reports, and includes automated unit tests using Pytest.
 
 ---
 
@@ -8,10 +8,12 @@ A Python-based log analysis tool that scans application log files, counts log le
 
 - Analyze application log files
 - Count ERROR, WARNING, and INFO log entries
-- Generate JSON reports automatically
+- Generate structured JSON reports
 - Handle empty log files
-- Handle missing log files using exception handling
+- Handle missing files using exception handling
 - Automated testing with Pytest
+
+---
 
 ## Project Structure
 
@@ -40,10 +42,12 @@ log-analyzer/
 ## Technologies
 
 - Python 3
-- JSON
 - Pytest
+- JSON
 - Regular Expressions (Regex)
 - File Handling
+- Exception Handling
+- Git & GitHub
 
 ---
 
@@ -74,7 +78,7 @@ log-analyzer/
 
 ---
 
-## Running the Project
+## Installation
 
 Clone the repository:
 
@@ -82,6 +86,24 @@ Clone the repository:
 git clone https://github.com/asifpirimov/Log-Analyzer.git
 cd Log-Analyzer
 ```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Usage
+
+Run the analyzer:
+
+```bash
+python analyzer.py
+```
+
+A JSON report will be generated inside the `reports` directory.
 
 ---
 
@@ -93,45 +115,72 @@ Run all tests:
 pytest
 ```
 
-or
+Example output:
 
-```bash
-pytest tests/
+```text
+========================= test session starts =========================
+
+collected 3 items
+
+tests/test_analyzer.py ...
+
+========================== 3 passed ==========================
 ```
 
 ---
 
 ## Current Test Coverage
 
-The current test suite validates:
+The current test suite verifies:
 
-- Valid log analysis
+- Valid log file analysis
 - Empty log file handling
 - Missing file handling
+- JSON report generation
 
 ---
 
 ## Future Improvements
 
-- Parse timestamps and log messages
-- Support custom log levels
-- Configuration file support
-- CLI interface
-- HTML report generation
-- CSV export
-- Performance optimization for large log files
-- GitHub Actions CI integration
+- Parse timestamps, log levels, and messages separately
+- Support multiple log files
+- Read configuration from a JSON file
+- Command-line interface (CLI)
+- HTML and CSV report generation
+- Advanced regular expression parsing
+- Increase unit test coverage
+- Continuous Integration with GitHub Actions
 
 ---
 
 ## Learning Objectives
 
-This project demonstrates practical experience with:
+This project was developed to strengthen practical skills in:
 
-- Python functions
-- Exception handling
+- Python
 - File processing
+- Exception handling
 - JSON serialization
-- Data structures
+- Regular Expressions
 - Unit testing with Pytest
-- Project organization
+- Software testing fundamentals
+- Git & GitHub workflow
+
+---
+
+## Requirements
+
+- Python 3.10+
+- Pytest
+
+Install Pytest if needed:
+
+```bash
+pip install pytest
+```
+
+---
+
+## License
+
+This project is intended for learning, portfolio, and educational purposes.
