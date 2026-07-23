@@ -35,3 +35,7 @@ def analyze(file_dir):
         
 
     return (a_errors,a_warnings,a_info)
+
+
+if __name__ == "__main__":
+    analyze("./logs/app.log")

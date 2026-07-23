@@ -1,0 +1,1 @@
+# Fixtures are stored in this file
