@@ -7,12 +7,11 @@ A Python-based log analysis tool that scans application log files, counts log le
 ## Features
 
 - Analyze application log files
-- Count ERROR, WARNING, and INFO messages
-- Export analysis results as a JSON report
-- Handle empty and missing log files
-- Automated unit testing with Pytest
-
----
+- Count ERROR, WARNING, and INFO log entries
+- Generate JSON reports automatically
+- Handle empty log files
+- Handle missing log files using exception handling
+- Automated testing with Pytest
 
 ## Project Structure
 
@@ -24,16 +23,16 @@ log-analyzer/
 │   └── api.log
 │
 ├── reports/
-│   └── report.json
 │
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py
+│   └── test_analyzer.py
+│
+├── .gitignore
 ├── analyzer.py
-├── configş.json
-├── models.py
-├── parser.py
-├── util.py
-├── test_analyzer.py
-├── requirements.txt
-└── README.md
+├── README.md
+└── requirements.txt
 ```
 
 ---
@@ -80,41 +79,24 @@ log-analyzer/
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/log-analyzer.git](https://github.com/asifpirimov/Log-Analyzer
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the analyzer:
-
-```bash
-python analyzer.py
+git clone https://github.com/asifpirimov/Log-Analyzer.git
+cd Log-Analyzer
 ```
 
 ---
 
 ## Running Tests
 
-Execute the test suite using Pytest:
+Run all tests:
 
 ```bash
 pytest
 ```
 
-Example:
+or
 
-```text
-======================== test session starts ========================
-
-collected 3 items
-
-test_analyzer.py ...
-
-======================== 3 passed ========================
+```bash
+pytest tests/
 ```
 
 ---
